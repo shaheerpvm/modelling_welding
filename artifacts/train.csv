@@ -1,8 +1,8 @@
-fm,ca,ts,ce,fd,rvi,pe,tsm
-316L,100,8.0, 20.361,1.4,Excessive Deposition,21.648,471
-304,80,8.0,18.8,1.2,No Defects,23.228,420
-309L,100,8.5,24.9,1.2,No Defects,20.324,459
-304,100,9.0,18.8,1.6,No Defects,37.384,610
-316L,90,9.0, 20.361,1.2,,39.61,596
-316L,80,8.5, 20.361,1.6,No Defects,15.772,415
-309L,80,9.0,24.9,1.4,Lack Of Fusion Of Hsla Steel,28.78,530
+fm,ca,ts,ce,fd,rvi,tsm
+316L,100,8.0, 20.361,1.4,Excessive Deposition,471
+304,80,8.0,18.8,1.2,No Defects,420
+309L,100,8.5,24.9,1.2,No Defects,459
+304,100,9.0,18.8,1.6,No Defects,610
+316L,90,9.0, 20.361,1.2,,596
+316L,80,8.5, 20.361,1.6,No Defects,415
+309L,80,9.0,24.9,1.4,Lack Of Fusion Of Hsla Steel,530
