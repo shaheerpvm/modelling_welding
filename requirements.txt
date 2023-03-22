@@ -9,4 +9,5 @@ dill
 statsmodels
 scipy
 plotly
--e .
+Flask
+#-e .

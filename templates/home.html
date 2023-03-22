@@ -1,0 +1,82 @@
+<html>
+<body>
+    <div class="login">
+       <h1>Weld Strength Predictor</h1>
+   
+       <form action="{{ url_for('predict_datapoint')}}" method="post">
+        <h1>
+            <legend>Weld strength Prediction</legend>
+        </h1>
+        <div class="mb-3">
+            <label class="form-label">Sl.No	</label>
+            <select class="form-control" name="Sl.No" placeholder="Enter Sl.No" required>
+                <option class="placeholder" selected disabled value="">Select Sl.No	</option>
+                <option value="1">
+                    1
+                </option>
+            </select>
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Filler Material</label>
+            <select class="form-control" name="Filler Material" placeholder="Enter Filler Material" required>
+                <option class="placeholder" selected disabled value="">Select Filler Material</option>
+                <option value="304">
+                    304
+                </option>
+                <option value="316L">
+                    316L
+                </option>
+                <option value="309L">
+                    309L
+                </option>
+            </select>
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Travel speed (cm/min)</label>
+            <input class="form-control" type="number" name="Travel speed (cm/min)"
+                placeholder="Enter Travel speed (cm/min)" min='8' max='10' />
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Chromium equivalent</label>
+            <input class="form-control" type="number" name="Chromium equivalent"
+                placeholder="Enter Chromium equivalent" min='15' max='25' />
+        </div>
+        <div class="mb-3">
+            <label class="form-label">thickness of welding specimen(mm)</label>
+            <input class="form-control" type="number" name="thickness of welding specimen(mm)"
+                placeholder="Enter thickness of welding specimen(mm)" min='2.9' max='3.1' />
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Feed (m/min)</label>
+            <input class="form-control" type="number" name="Feed (m/min)"
+                placeholder="Enter thickness of Feed (m/min)" min='1.2' max='1.6' />
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Result of visual inspection</label>
+            <select class="form-control" name="Result of visual inspection" placeholder="Enter Result of visual inspection" required>
+                <option class="placeholder" selected disabled value="">Select Result of visual inspection</option>
+                <option value="No Defects">
+                    No Defects
+                </option>
+                <option value="Excessive Deposition">
+                    Excessive Deposition
+                </option>
+                <option value="Lack Of Fusion Of Hsla Steel">
+                    Lack Of Fusion Of Hsla Steel
+                </option>
+            </select>
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Percentage Elongation</label>
+            <input class="form-control" type="number" name="Percentage Elongation"
+                placeholder="Enter Percentage Elongation" min='10' max='50' />
+        </div>
+        <div class="mb-3">
+            <input class="btn btn-primary" type="submit" value="Predict weld strength" required />
+        </div>
+    </form>
+    <h2>
+       THE  prediction is {{results}}
+    </h2>
+   <body>
+</html>
